@@ -240,7 +240,7 @@ public class JadeMeterThreadGroupGui extends AbstractThreadGroupGui
     private void init() {
         JPanel mainPanel = new VerticalPanel();
 
-        // [제목 테두리 설정]
+
         Border titleBorder = BorderFactory.createTitledBorder(
                 BorderFactory.createEtchedBorder(), getStaticLabel());
         setBorder(titleBorder);
