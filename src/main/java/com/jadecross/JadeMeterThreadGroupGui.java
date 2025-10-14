@@ -245,7 +245,7 @@ public class JadeMeterThreadGroupGui extends AbstractThreadGroupGui
                 BorderFactory.createEtchedBorder(), getStaticLabel());
         setBorder(titleBorder);
 
-        // ------------------------------------------------------------------
+
         // [1] Thread Properties (가장 위로)
         // ------------------------------------------------------------------
         JPanel threadPropsPanel = createThreadPropertiesPanel();
