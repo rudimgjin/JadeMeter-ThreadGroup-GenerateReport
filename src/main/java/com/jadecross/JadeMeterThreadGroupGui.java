@@ -195,7 +195,8 @@ public class JadeMeterThreadGroupGui extends AbstractThreadGroupGui
     public void itemStateChanged(ItemEvent ie) {
         if (ie.getSource() == schedulerBox) {
             toggleSchedulerFields();
-            updateReportAndCopyToClipboard();
+            // [수정] 체크박스 상태 변경 시 텍스트 업데이트만 수행하도록 변경
+            updateReportTextOnly();
         }
     }
 
@@ -348,7 +349,8 @@ public class JadeMeterThreadGroupGui extends AbstractThreadGroupGui
     @Override public void focusGained(FocusEvent e) {}
     @Override
     public void focusLost(FocusEvent e) {
-        updateReportAndCopyToClipboard();
+        // [수정] focusLost 이벤트에서는 텍스트 업데이트만 수행하도록 변경
+        updateReportTextOnly();
     }
 
     // --- 클립보드 및 멘트 생성 로직 ---
